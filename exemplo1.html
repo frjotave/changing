@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Conteúdo </title>
+    <style>
+        body {
+            font-family: cursive, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f1eded;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 90%; 
+            width: 100%;
+            box-sizing: border-box; 
+        }
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin: 0 0 10px;
+        }
+        p {
+            color: #555;
+            font-size: 1.2em;
+            margin: 0 0 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border-color: #fff;
+
+            background-color: #8f8c00;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #fff;
+            color: #555;
+            border-color: blue;
+            border-radius: 5px;
+            
+        }
+
+      
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            p, button {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2em;
+            }
+            p, button {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Alterar!!!</h1>
+        <p id="minhaDiv">Baseada na série homônima de quadrinhos criada por Robert Kirkman (The Walking Dead), Invincible acompanha Mark Grayson, um adolescente que tenta levar uma vida comum, exceto por um pequeno detalhe: ele é filho do super-herói mais poderoso da Terra.</p>
+        <button onclick="alterarConteudo()">0k!</button>
+    </div>
+
+    <script>
+        function alterarConteudo() {
+            document.getElementById("minhaDiv").innerHTML = "<strong>Conteúdo alterado pelo JavaScript!</strong>";
+        }
+    </script>
+</body>
+</html>
