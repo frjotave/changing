@@ -6,7 +6,7 @@
     <title>Alterar Conteúdo </title>
     <style>
         body {
-            font-family: cursive, sans-serif;
+            font-family: Tahoma, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -28,6 +28,7 @@
             color: #333;
             font-size: 2em;
             margin: 0 0 10px;
+            text-align: center;
         }
         p {
             color: #555;
@@ -38,14 +39,15 @@
             padding: 10px 20px;
             font-size: 1em;
             border-color: #fff;
-
-            background-color: #8f8c00;
+            font-weight: 500;
+            background-color: blue;
             color: #fff;
             cursor: pointer;
         }
         button:hover {
             background-color: #fff;
-            color: #555;
+            color: #000000;
+            font-weight: 500;
             border-color: blue;
             border-radius: 5px;
             
@@ -73,14 +75,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>Alterar!!!</h1>
+        <h1>Invencible!?</h1>
         <p id="minhaDiv">Baseada na série homônima de quadrinhos criada por Robert Kirkman (The Walking Dead), Invincible acompanha Mark Grayson, um adolescente que tenta levar uma vida comum, exceto por um pequeno detalhe: ele é filho do super-herói mais poderoso da Terra.</p>
         <button onclick="alterarConteudo()">0k!</button>
     </div>
 
     <script>
         function alterarConteudo() {
-            document.getElementById("minhaDiv").innerHTML = "<strong>Conteúdo alterado pelo JavaScript!</strong>";
+            document.getElementById("minhaDiv").innerHTML = "<strong>Eu não teria tanta certeza...</strong>";
         }
     </script>
 </body>
